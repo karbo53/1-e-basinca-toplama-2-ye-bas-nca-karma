@@ -35,7 +35,7 @@ int main() {
             }
             break;
         default:
-            printf("Hatali secim!\n");
+            printf("Hatali secim! Lütfen geçerli bir işlem seçin.\n");
             break;
     }
 
