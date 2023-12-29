@@ -1,31 +1,31 @@
 #include <stdio.h>
 
 int main() {
-    float num1, num2;
-    int operation;
+    int sayi, sayi2;
+    int secim;
 
     printf("Birinci sayiyi girin: ");
-    scanf("%f", &num1);
+    scanf("%d", &sayi1);
     printf("Ikinci sayiyi girin: ");
-    scanf("%f", &num2);
+    scanf("%d", &sayi2);
 
     printf("Hangi islemi yapmak istersiniz?\n");
     printf("1) Toplama\n");
     printf("2) Cikarma\n");
     printf("3) Carpma\n");
     printf("4) Bolme\n");
-    printf("Secim yapiniz: ");
-    scanf("%d", &operation);
+    printf("Seçim yapınız: ");
+    scanf("%d", &secim);
 
-    switch(operation) {
+    switch(secim) {
         case 1:
-            printf("%.2f + %.2f = %.2f\n", num1, num2, num1 + num2);
+            printf("Toplama işlemi sonucu :%d",sayi1 +sayi2);
             break;
         case 2:
             printf("%.2f - %.2f = %.2f\n", num1, num2, num1 - num2);
             break;
         case 3:
-            printf("%.2f * %.2f = %.2f\n", num1, num2, num1 * num2);
+            printf("Bölme işleminin sonucu : %f" ,(float) sayi1 / (float) sayi2);
             break;
         case 4:
             if (num2 != 0) {
